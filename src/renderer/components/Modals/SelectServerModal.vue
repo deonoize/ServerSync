@@ -63,7 +63,7 @@
         },
         methods: {
             openModal() {
-                this.$http.get("http://" + this.ipserv + ":8080/api/getFolders?secret=" + this.secret)
+                this.$http.get("http://" + this.ipserv + ":8080/api/getFolders")
                     .then(response => {
                         this.folders = response.data;
                         this.current = this.folders;

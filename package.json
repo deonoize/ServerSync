@@ -1,10 +1,10 @@
 {
-    "name": "emulator-electron",
+    "name": "server-sync",
     "version": "0.0.1",
     "author": "",
     "description": "",
     "license": "MIT",
-    "repository": "https://github.com/deonoize/EmulatorElectron",
+    "repository": "https://github.com/deonoize/ServerSync",
     "main": "./dist/electron/main.js",
     "scripts": {
         "build": "node .electron-vue/build.js && electron-builder",

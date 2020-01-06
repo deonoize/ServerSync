@@ -10,7 +10,6 @@ import {Bus} from './assets/js/Bus';
 if (!process.env.IS_WEB) Vue.use(require('vue-electron'));
 Vue.http = Vue.prototype.$http = axios;
 Vue.prototype.ipserv = "127.0.0.1";
-Vue.prototype.secret = "SECCCCCCRET321";
 Vue.prototype.$fs = fs;
 Vue.prototype.$bus = Bus;
 Vue.config.productionTip = false;
