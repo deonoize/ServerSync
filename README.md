@@ -1,8 +1,8 @@
-# emulator-electron
+# ServerSync
 
-> An electron-vue project
+Это приложение для синхронизации каталогов между ПК и сервером
 
-#### Build Setup
+#### Установка
 
 ``` bash
 # install dependencies
@@ -13,12 +13,15 @@ npm run dev
 
 # build electron application for production
 npm run build
-
-
 ```
 
----
+Сначала нужно разместить [backend](https://github.com/deonoize/ServerSyncBackend "ServerSyncBackend") на вашем сервере.
 
-This project was generated with [electron-vue](https://github.com/SimulatedGREG/electron-vue) using [vue-cli](https://github.com/vuejs/vue-cli). Documentation about the original structure can be found [here](https://simulatedgreg.gitbooks.io/electron-vue/content/index.html).
+После чего необходимо в [данном файле](https://github.com/deonoize/ServerSync/blob/master/src/renderer/main.js "/src/renderer/main.js")  (/src/renderer/main.js) указать адрес сервера:
+``` javascript
+Vue.prototype.ipserv = "your_address";
+```
 
-electron-builder install-app-deps
+Теперь если сервер запущен, при запуске приложения сверху будет надпись ONLINE
+
+Добавьте новую синхронизацию, выбрав папку на ПК и серере. На этом все, удачи :)
