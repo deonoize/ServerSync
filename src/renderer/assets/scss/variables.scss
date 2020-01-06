@@ -1,0 +1,32 @@
+$orange: #f7d102;
+$orange-dark: rgba(243, 117, 53, 1);
+$black: #000;
+$black-light: #545454;
+$white: #fff;
+$gray: #e3e3e3;
+$gray-dark: #989898;
+$gray-middle: #f9f9f9;
+
+$body-bg: $gray-middle;
+$body-color: $black;
+
+$btn-focus-box-shadow: none;
+$btn-active-box-shadow: none;
+$btn-box-shadow: none;
+$btn-transition: .5s;
+$input-placeholder-color: $gray-dark;
+$input-focus-border: none;
+
+$link-hover-decoration: none;
+$link-color: $black;
+$link-hover-color: $orange-dark;
+
+$modal-content-bg: $gray-middle;
+$modal-content-border-width: 0;
+$modal-content-box-shadow-xs: 0 .2rem .25rem rgba(0, 0, 0, 0.15);
+$modal-content-box-shadow-sm-up: 0 .2rem .25rem rgba(0, 0, 0, 0.15);
+$modal-content-border-radius: .8rem;
+
+$input-focus-box-shadow: none;
+
+$fa-font-path: "../../../../node_modules/@fortawesome/fontawesome-free/webfonts";

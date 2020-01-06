@@ -1,0 +1,42 @@
+.btn {
+  cursor: pointer;
+}
+
+body .vs__dropdown-toggle {
+  @extend .form-control;
+
+  display: flex;
+}
+
+.vs__ {
+  &actions {
+    padding: 0;
+  }
+
+  &selected-options {
+    padding: 0 2px 0 0;
+  }
+
+  &selected, &search, &search:focus {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.scroll-style {
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @extend .transition;
+    background: rgb(255, 255, 255, 0.8);
+  }
+
+  &::-webkit-scrollbar-thumb:window-inactive {
+    background: rgb(255, 255, 255, 0.5);
+  }
+}

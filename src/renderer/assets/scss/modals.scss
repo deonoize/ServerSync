@@ -1,0 +1,32 @@
+.fade-scale {
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear;
+
+  &.show {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-content {
+  width: 100%;
+  pointer-events: auto;
+  border: 0 solid rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  outline: 0;
+
+  .modal-header {
+    padding: 0;
+  }
+
+  .modal-footer {
+    justify-content: center;
+  }
+}
+
+.modal-dialog {
+  overflow-y: initial !important
+}
